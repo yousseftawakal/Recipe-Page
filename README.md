@@ -40,13 +40,13 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
 ```sh
-git clone https://github.com/your_username/recipe-page-challenge.git
+git clone https://github.com/pr0G-alt/Recipe-Page.git
 ```
 
 2. **Navigate to the project directory:**
 
 ```sh
-cd recipe-page-challenge
+cd Recipe-Page
 ```
 
 3. **Open `index.html` in your browser:**
