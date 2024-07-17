@@ -1,0 +1,146 @@
+@import url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+@import url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(24, 5%, 18%);
+  counter-reset: count;
+}
+
+hr {
+  margin: 25px 0;
+  border: solid 1px hsl(30, 18%, 87%);
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  margin: 25px 0;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 2em;
+  color: hsl(14, 45%, 36%);
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: white;
+  margin: 100px 0;
+  max-width: 736px;
+  min-width: 320px;
+  padding: 35px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media (max-width: 736px) {
+  .container {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .img {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .content {
+    padding: 0 35px 35px;
+  }
+}
+
+li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+li:before {
+  margin-left: -35px;
+  margin-right: 25px;
+  color: hsl(14, 45%, 36%);
+}
+
+ul li::before {
+  content: "•";
+}
+
+ol li:before {
+  counter-increment: count;
+  content: counter(count) ".";
+}
+
+.prep {
+  background-color: hsl(330, 100%, 98%);
+  padding: 25px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 25px 0;
+}
+
+.prep h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+.prep li::before {
+  color: hsl(332, 51%, 32%);
+}
+
+.table {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.table td {
+  border-bottom: solid 1px hsl(30, 18%, 87%);
+  padding: 10px 25px;
+}
+
+.table tr:last-of-type td {
+  border-bottom: none;
+}
+
+.table tr td:last-of-type {
+  font-weight: bolder;
+  color: hsl(14, 45%, 36%);
+}
