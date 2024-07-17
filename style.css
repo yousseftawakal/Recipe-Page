@@ -118,8 +118,10 @@ ol li:before {
   margin: 25px 0;
 }
 
-.prep h3 {
+.prep span {
   color: hsl(332, 51%, 32%);
+  font-size: 1.15em;
+  font-weight: bold;
 }
 
 .prep li::before {
